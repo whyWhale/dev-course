@@ -1,6 +1,6 @@
 package com.programmers.devcourse.collection._collection._interface;
 
-import com.programmers.devcourse.collection.iterateor._interface.MyIterator;
+import com.programmers.devcourse.collection._iterator._interface.MyIterator;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
