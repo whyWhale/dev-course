@@ -1,0 +1,17 @@
+package com.programmers.devcourse.oop.polymorphism._implements;
+
+import com.programmers.devcourse.oop.polymorphism.LoginType;
+import com.programmers.devcourse.oop.polymorphism._interface.Login;
+
+public class NaverLogin implements Login {
+
+  @Override
+  public void login() {
+    System.out.println("NaverLogin.login");
+  }
+
+  @Override
+  public LoginType getType() {
+    return LoginType.NAVER;
+  }
+}
