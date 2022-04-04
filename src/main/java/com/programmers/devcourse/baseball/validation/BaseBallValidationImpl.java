@@ -4,6 +4,8 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.regex.Pattern;
 
+import com.programmers.devcourse.baseball.exception.NotProperNumber;
+import com.programmers.devcourse.baseball.exception.NotUniqueNumber;
 import com.programmers.devcourse.baseball.utils.RegexUtils;
 
 public class BaseBallValidationImpl implements InputValidation {
@@ -16,11 +18,11 @@ public class BaseBallValidationImpl implements InputValidation {
 	@Override
 	public boolean isValidInput(String input) {
 		if (!isNumericAnd3SizeNumber(input)) {
-			throw new RuntimeException("숫자가 아닌 문자가 포함되었거나 3자리 숫자가 아닙니다.");
+			throw new NotProperNumber("숫자가 아닌 문자가 포함되었거나 3자리 숫자가 아닙니다.!");
 		}
 
 		if (!isDistinctNumeric(input)) {
-			throw new RuntimeException("중복된 숫자가 들어가 있습니다.");
+			throw new NotUniqueNumber("중복된 숫자가 들어가 있습니다.!");
 		}
 
 		return true;
