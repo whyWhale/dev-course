@@ -1,19 +1,26 @@
 package com.programmers.devcourse.baseball;
 
-import java.io.IOException;
+import java.util.stream.Stream;
 
-import com.programmers.devcourse.baseball.engine.BaseBallEngine;
-import com.programmers.devcourse.baseball.generator.RandomNumberGenerator;
+import com.github.javafaker.Faker;
 import com.programmers.devcourse.baseball.io.Console;
-import com.programmers.devcourse.baseball.referee.BaseBallReferee;
-import com.programmers.devcourse.baseball.validation.BaseBallValidationImpl;
+import com.programmers.devcourse.baseball.model.Numbers;
 
 public class Main {
-
-	public static void main(String[] args) throws IOException {
-		BaseBallEngine baseBallEngine = new BaseBallEngine(new Console(), new BaseBallValidationImpl(),
-				new RandomNumberGenerator(),new BaseBallReferee());
-		baseBallEngine.start();
+	public static void main(String[] args) {
+		Main main = new Main();
+		Console console = new Console();
+		BaseBall baseBall = new BaseBall(main.BaseBallNumberGenerator(), console, console);
+		baseBall.run();
 	}
 
+	private NumberGenerator BaseBallNumberGenerator() {
+		return count -> {
+			Faker faker = new Faker();
+			return new Numbers(Stream.generate(() -> faker.number().randomDigitNotZero())
+					.limit(count)
+					.toArray(Integer[]::new)
+			);
+		};
+	}
 }
