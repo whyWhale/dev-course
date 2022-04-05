@@ -1,4 +1,4 @@
-package com.programmers.devcourse.baseball.dto;
+package com.programmers.devcourse.baseball.custom.dto;
 
 public class JudgementDto {
 	private final int strike;

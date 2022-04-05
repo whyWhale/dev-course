@@ -10,6 +10,8 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import com.github.javafaker.Faker;
+import com.programmers.devcourse.baseball.custom.validation.BaseBallValidationImpl;
+import com.programmers.devcourse.baseball.custom.validation.InputValidation;
 
 public class ValidationTest {
 

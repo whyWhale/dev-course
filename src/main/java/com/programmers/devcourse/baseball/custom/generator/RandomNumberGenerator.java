@@ -1,4 +1,4 @@
-package com.programmers.devcourse.baseball.generator;
+package com.programmers.devcourse.baseball.custom.generator;
 
 import java.util.stream.Stream;
 

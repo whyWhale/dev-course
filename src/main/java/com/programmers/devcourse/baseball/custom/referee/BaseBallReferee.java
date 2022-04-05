@@ -1,10 +1,10 @@
-package com.programmers.devcourse.baseball.referee;
+package com.programmers.devcourse.baseball.custom.referee;
 
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 
-import com.programmers.devcourse.baseball.dto.JudgementDto;
+import com.programmers.devcourse.baseball.custom.dto.JudgementDto;
 
 public class BaseBallReferee implements Referee<JudgementDto, String> {
 

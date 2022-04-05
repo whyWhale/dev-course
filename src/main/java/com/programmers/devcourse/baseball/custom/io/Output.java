@@ -1,4 +1,4 @@
-package com.programmers.devcourse.baseball.io;
+package com.programmers.devcourse.baseball.custom.io;
 
 import java.io.IOException;
 

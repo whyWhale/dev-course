@@ -1,4 +1,4 @@
-package com.programmers.devcourse.baseball.referee;
+package com.programmers.devcourse.baseball.custom.referee;
 
 public interface Referee<OUTPUT, INPUT> {
 

@@ -1,4 +1,4 @@
-package com.programmers.devcourse.baseball.validation;
+package com.programmers.devcourse.baseball.custom.validation;
 
 public interface InputValidation {
 

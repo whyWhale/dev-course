@@ -9,6 +9,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import com.programmers.devcourse.baseball.custom.generator.RandomNumberGenerator;
+
 class RandomNumberGeneratorTest {
 
 	private final int FIXED_LENGTH = 3;
